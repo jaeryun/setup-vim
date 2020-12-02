@@ -21,6 +21,7 @@ call plug#end()
 	set bg=dark		"background color
 	set smartindent
 	set hlsearch
+	set cindent		"For c,c++,java
 
 "------------------------------------------------------------------------"
 "	NERD Tree setting
