@@ -22,6 +22,9 @@ call plug#end()
 	set smartindent
 	set hlsearch
 	set cindent		"For c,c++,java
+	set tabstop=4
+	set expandtab
+	set shiftwidth=4 
 
 "------------------------------------------------------------------------"
 "	NERD Tree setting
