@@ -40,6 +40,11 @@ call plug#end()
 	nmap <C-J> <C-W>j
 	nmap <C-K> <C-W>k
 	nmap <C-L> <C-W>l
+	nmap <C-Left> <C-W>h
+	nmap <C-Down> <C-W>j
+	nmap <C-Up> <C-W>k
+	nmap <C-Right> <C-W>l
+
 
 	let g:SrcExpl_winHeight = 8
 	let g:SrcExpl_refreshTime = 100
