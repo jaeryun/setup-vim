@@ -57,3 +57,7 @@ call plug#end()
 "------------------------------------------------------------------------"
 	nmap <F9> :TagbarToggle<CR>
 
+
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
