@@ -10,6 +10,8 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'majutsushi/tagbar'
 
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 "------------------------------------------------------------------------"
@@ -53,11 +55,26 @@ call plug#end()
 	let g:SrcExpl_isUpdateTags = 0
 
 "------------------------------------------------------------------------"
-"	Tag List setting
+"       Tag List setting
 "------------------------------------------------------------------------"
-	nmap <F9> :TagbarToggle<CR>
+nmap <F9> :TagbarToggle<CR>
 
+
+"------------------------------------------------------------------------"
+"       Tag List setting
+"------------------------------------------------------------------------"
+
+nmap <F3>   <Plug>NERDCommenterToggle
+vmap <F3>   <Plug>NERDCommenterToggle<CR>gv
+
+"------------------------------------------------------------------------"
+"       Others
+"------------------------------------------------------------------------"
 
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
+
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
