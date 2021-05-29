@@ -71,9 +71,9 @@ vmap <F3>   <Plug>NERDCommenterToggle<CR>gv
 "       Others
 "------------------------------------------------------------------------"
 
-#set mouse=a
-#map <ScrollWheelUp> <C-Y>
-#map <ScrollWheelDown> <C-E>
+"set mouse=a
+"map <ScrollWheelUp> <C-Y>
+"map <ScrollWheelDown> <C-E>
 
 if has("autocmd")
     au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
