@@ -3,9 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'wesleyche/SrcExpl'
 
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode'
-
 Plug 'junegunn/vim-easy-align'
 
 Plug 'majutsushi/tagbar'
